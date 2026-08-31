@@ -1,4 +1,3 @@
-import React from 'react';
 import type { JSX } from 'react';
 // @ts-ignore
 import OfficeRoomImg from "../assets/ChatGPT Image Aug 22, 2026, 01_30_28 AM.png";

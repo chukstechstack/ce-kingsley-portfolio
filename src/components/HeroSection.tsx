@@ -1,4 +1,3 @@
-import React from 'react';
 import type { JSX } from 'react';
 import { TECH_STACK } from './data';
 import StackCard from './StackCard';

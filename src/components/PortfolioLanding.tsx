@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import type { JSX } from 'react';
 import BackgroundOverlay from './BackgroundOverlay';
 import HeroSection from './HeroSection';

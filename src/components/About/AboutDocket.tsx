@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { JSX } from 'react';
 import AboutHero from './AboutHero';
 import AboutInvitation from './AboutInvitation';
