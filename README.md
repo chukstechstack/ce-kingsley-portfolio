@@ -1,4 +1,4 @@
-# ⚡ C.E. Kingsley // Portfolio 2026
+# ⚡ C.E. Kingsley 
 
 A high-performance, editorial-style full-stack developer portfolio built to showcase modern web engineering, clean component design, and immersive digital experiences.
 
