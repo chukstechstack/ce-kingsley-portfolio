@@ -101,7 +101,7 @@ export default function ContactDocket({ isOpen, onClose }: ContactDocketProps): 
                     {/* Socials Grid */}
                     <div className="grid grid-cols-2 gap-4 max-w-md">
                         <a 
-                            href="www.linkedin.com/in/chukstechstack" 
+                            href="https://www.linkedin.com/in/chukstechstack/" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="border-2 border-black py-4 px-6 font-mono text-xs font-bold tracking-widest uppercase text-center hover:bg-black hover:text-white transition-colors"

@@ -1,39 +1,39 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import type { JSX } from 'react';
 import BackgroundOverlay from './BackgroundOverlay';
 import HeroSection from './HeroSection';
 import ProjectModule from './ProjectModule';
-import  Navbar from './Navbar';
+import Navbar from './Navbar';
 import AboutDocket from './About/AboutDocket';
-import ContactDocket from './ContactDock'; 
+import ContactDocket from './ContactDock';
 
 export default function PortfolioLanding(): JSX.Element {
-  const [openModal, setOpenModal] = useState<'about' | 'contact' | null>(null);
+    const [openModal, setOpenModal] = useState<'about' | 'contact' | null>(null);
 
-  const isPaused = openModal !== null;
+    const isPaused = openModal !== null;
 
-  return (
-    <div className="relative w-full min-h-screen bg-[#0b0b0b] text-white font-sans antialiased overflow-x-hidden flex flex-col justify-between selection:bg-white selection:text-black">
-      {/* Top Header Navbar */}
-      <Navbar
-        onOpenAbout={() => setOpenModal('about')}
-        onOpenContact={() => setOpenModal('contact')}
-      />
+    return (
+        <div className="relative w-full min-h-screen bg-[#0b0b0b] text-white font-sans antialiased overflow-x-hidden flex flex-col justify-between selection:bg-white selection:text-black">
+            {/* Top Header Navbar */}
+            <Navbar
+                onOpenAbout={() => setOpenModal('about')}
+                onOpenContact={() => setOpenModal('contact')}
+            />
 
-      {/* Background & S-Curve Overlay */}
-      <BackgroundOverlay paused={isPaused} />
+            {/* Background & S-Curve Overlay */}
+            <BackgroundOverlay paused={isPaused} />
 
-      {/* Hero Content & Tech Marquee */}
-      <HeroSection paused={isPaused} />
+            {/* Hero Content & Tech Marquee */}
+            <HeroSection paused={isPaused} />
 
-      <ProjectModule paused={isPaused} />
+            <ProjectModule paused={isPaused} />
 
-      {/* Drawers — rendered here so they can pause siblings above */}
-      <AboutDocket isOpen={openModal === 'about'} onClose={() => setOpenModal(null)} />
-      <ContactDocket isOpen={openModal === 'contact'} onClose={() => setOpenModal(null)} />
+            {/* Drawers — rendered here so they can pause siblings above */}
+            <AboutDocket isOpen={openModal === 'about'} onClose={() => setOpenModal(null)} />
+            <ContactDocket isOpen={openModal === 'contact'} onClose={() => setOpenModal(null)} />
 
-      {/* --- ANIMATIONS --- */}
-      <style>{`
+            {/* --- ANIMATIONS --- */}
+            <style>{`
         @keyframes slideUp {
           from {
             opacity: 0;
@@ -67,6 +67,6 @@ export default function PortfolioLanding(): JSX.Element {
           animation-play-state: paused;
         }
       `}</style>
-    </div>
-  );
+        </div>
+    );
 }
