@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Solid Black Background -->
+  <rect width="512" height="512" fill="#000000" />
+
+  <!-- Drop Shadow Layer for Cutout Cardboard Feel -->
+  <g fill="none" stroke="#333333" stroke-width="12" stroke-linejoin="round" opacity="0.6">
+    <text x="135" y="380" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="340">C</text>
+    <text x="315" y="380" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="340">E</text>
+  </g>
+
+  <!-- Physical Cutout "C" (Shifted up & left, crisp white) -->
+  <text 
+    x="120" 
+    y="360" 
+    fill="#FFFFFF" 
+    font-family="system-ui, -apple-system, sans-serif" 
+    font-weight="900" 
+    font-size="340"
+    letter-spacing="-20"
+  >
+    C
+  </text>
+
+  <!-- Physical Cutout "E" Overlapping/Intersecting with a tactile card separation -->
+  <text 
+    x="300" 
+    y="360" 
+    fill="#E5E5E5" 
+    font-family="system-ui, -apple-system, sans-serif" 
+    font-weight="900" 
+    font-size="340"
+  >
+    E
+  </text>
+</svg>

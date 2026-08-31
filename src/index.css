@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body.modal-open .animate-marquee,
+body.modal-open .animate-ping,
+body.modal-open [class*="animate-["] {
+  animation-play-state: paused !important;
+}
